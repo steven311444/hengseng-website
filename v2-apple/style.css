@@ -227,7 +227,13 @@ button.btn { border: none; cursor: pointer; font-family: inherit; }
   transition: box-shadow 0.22s ease, transform 0.22s ease;
 }
 .card:hover { box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); transform: translateY(-3px); }
-.card .img-placeholder { border-radius: 0; border: none; border-bottom: 1px dashed var(--ph-border); }
+.card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--bg-alt);
+}
 .card-body { padding: 22px 22px 26px; }
 .card h3 { font-size: 1.12rem; margin-bottom: 8px; letter-spacing: -0.01em; }
 .card p { color: var(--muted); font-size: 0.92rem; }
@@ -301,6 +307,14 @@ button.btn { border: none; cursor: pointer; font-family: inherit; }
 
 /* ---------- 信任区 ---------- */
 .trust-figure { margin: 0; }
+.trust-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  background: var(--bg-alt);
+}
 .trust-figure figcaption {
   margin-top: 12px;
   font-size: 0.9rem;
@@ -405,6 +419,11 @@ button.btn { border: none; cursor: pointer; font-family: inherit; }
   font-size: 0.88rem;
 }
 .site-footer p:first-child { color: #fff; font-weight: 600; margin-bottom: 4px; }
+.site-footer .credits {
+  margin-top: 8px;
+  font-size: 0.72rem;
+  color: #7fa795;
+}
 
 /* ---------- 响应式 ---------- */
 @media (max-width: 960px) {
