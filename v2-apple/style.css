@@ -524,5 +524,7 @@ button.btn { border: none; cursor: pointer; font-family: inherit; }
   .hero h1 { font-size: 2.1rem; }
   .section { padding: 70px 0; }
   .section h2 { font-size: 1.85rem; }
+  .qc-video { max-width: 250px; }
+  .video-play-btn { width: 52px; height: 52px; font-size: 18px; padding-left: 4px; }
   .grid-4, .grid-3, .steps { grid-template-columns: 1fr; }
 }
