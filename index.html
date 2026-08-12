@@ -252,7 +252,7 @@
           <div class="contact-item"><strong>Based in</strong><br><span>Shanghai, China &middot; Serving global importers</span></div>
           <div class="contact-item"><strong>Response</strong><br><span>Within 24–48 hours</span></div>
         </div>
-        <form class="quote-form" action="mailto:steventan@hengsengcn.com" method="post" enctype="text/plain">
+        <form class="quote-form" id="inquiry-form">
           <input type="text" name="Name" placeholder="Your name" required>
           <input type="email" name="Email" placeholder="Your email" required>
           <input type="text" name="WhatsApp" placeholder="WhatsApp / phone (optional)">
@@ -266,6 +266,7 @@
           </select>
           <textarea name="Message" rows="4" placeholder="Tell us the product, quantity and target price…" required></textarea>
           <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <p class="form-note">This opens WhatsApp with your message — we reply within 24–48 hours. Prefer email? <a href="mailto:steventan@hengsengcn.com">steventan@hengsengcn.com</a></p>
         </form>
       </div>
     </div>
@@ -278,5 +279,23 @@
     </div>
   </footer>
 
+  <script>
+    document.getElementById("inquiry-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var f = this;
+      var name = f.querySelector('[name="Name"]').value.trim();
+      var email = f.querySelector('[name="Email"]').value.trim();
+      var wa = f.querySelector('[name="WhatsApp"]').value.trim();
+      var line = f.querySelector('[name="Product line"]').value;
+      var msg = f.querySelector('[name="Message"]').value.trim();
+      var text = "New inquiry from hengsengcn.com\n\nName: " + name +
+                 "\nEmail: " + email +
+                 (wa ? "\nWhatsApp / Phone: " + wa : "") +
+                 "\nProduct line: " + line +
+                 "\nMessage: " + msg;
+      window.open("https://wa.me/8615901838520?text=" + encodeURIComponent(text), "_blank", "noopener");
+      f.querySelector("button").textContent = "Opening WhatsApp…";
+    });
+  </script>
 </body>
 </html>

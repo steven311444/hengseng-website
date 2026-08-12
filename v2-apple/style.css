@@ -443,6 +443,13 @@ button.btn { border: none; cursor: pointer; font-family: inherit; }
 .quote-form select:focus,
 .quote-form textarea:focus { border-color: var(--green); }
 .quote-form button { align-self: flex-start; }
+.form-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-top: 4px;
+}
+.form-note a { color: var(--green); text-decoration: none; }
+.form-note a:hover { text-decoration: underline; }
 
 /* ---------- 页脚 ---------- */
 .site-footer {
