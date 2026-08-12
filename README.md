@@ -43,13 +43,14 @@ Apple 极简黑白风 + 品牌绿 `#0F5C3D`，英雄区预留上海天际线头�
 | 产品卡 2 遮阳网/篷布 | `pvc-fabric.jpg` | ✅ 已放（自有 PVC 篷房图） |
 | 产品卡 3 捆绑带 | `binding-strap.jpg` | ✅ 已放（自有捆绑带图） |
 | 产品卡 4 仿真花 | `artificial-flowers.jpg` | ✅ 已放（Pexels 免费图） |
-| 信任区 仓库 | `warehouse.jpg` | ✅ 已放（免费图，建议换自己仓库实拍） |
-| 信任区 验货 | `qc-inspection.jpg` | ✅ 已放（Pexels 免费图，建议换自己验货实拍） |
-| 信任区 团队 | `team.jpg` | ✅ 已放（Pexels 免费图，建议换自己团队实拍） |
-| 信任区 装柜发货 | `container-loading.jpg` | ✅ 已放（Pexels 免费图） |
+| 信任区（验货流程） | 视频 `videos/pvc-strength-test.mp4`（待放入）+ 封面 `qc-inspection.jpg` | ⏳ 视频文件待用户提供 |
 
 > 免费图许可：Pexels License（免署名）+ Flickr CC BY 2.0（页脚已署名 Jnzl's Photos、ubrayj02）。
 > `tarpaulin.jpg` 为备用篷布图，暂未使用。
+
+## 视频
+
+- 验货区视频：把实验室 PVC 强度测试视频放到 `videos/pvc-strength-test.mp4`（v2-apple 同步放一份），页面自动生效。
 
 ## 待补内容
 
