@@ -188,10 +188,10 @@
       <div class="qc-showcase">
         <div class="qc-video">
           <!-- 视频文件放到 website/videos/pvc-strength-test.mp4 后自动生效 -->
-          <video controls playsinline preload="metadata" poster="images/pvc-test-poster.jpg">
-            <source src="videos/pvc-strength-test.mp4" type="video/mp4">
-            Your browser does not support video playback.
-          </video>
+          <div class="video-launcher" id="pvc-video-launcher" role="button" tabindex="0" aria-label="Play PVC strength test video">
+            <img class="video-poster" src="images/pvc-test-poster.jpg" alt="PVC fabric strength test in laboratory">
+            <span class="video-play-btn" aria-hidden="true">&#9654;</span>
+          </div>
           <p class="qc-video-caption">PVC fabric strength test — our partner factory laboratory</p>
         </div>
         <div class="qc-content">
@@ -280,6 +280,24 @@
   </footer>
 
   <script>
+    (function () {
+      var launcher = document.getElementById("pvc-video-launcher");
+      if (!launcher) return;
+      function play() {
+        launcher.innerHTML =
+          '<video controls autoplay playsinline preload="auto" poster="images/pvc-test-poster.jpg">' +
+          '<source src="videos/pvc-strength-test.mp4" type="video/mp4">' +
+          "Your browser does not support video playback.</video>";
+      }
+      launcher.addEventListener("click", play);
+      launcher.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          play();
+        }
+      });
+    })();
+
     document.getElementById("inquiry-form").addEventListener("submit", function (e) {
       e.preventDefault();
       var f = this;

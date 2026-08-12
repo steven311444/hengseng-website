@@ -333,15 +333,58 @@ button.btn { border: none; cursor: pointer; font-family: inherit; }
   max-width: 400px;
   justify-self: end;
 }
-.qc-video video {
+.video-launcher {
+  position: relative;
   display: block;
   width: 100%;
   aspect-ratio: 9 / 16;
-  object-fit: cover;
-  background: #000;
   border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
   border: 1px solid var(--border);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+.video-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-launcher::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.35) 100%);
+}
+.video-play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(15, 92, 61, 0.92);
+  color: #fff;
+  font-size: 22px;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.video-launcher:hover .video-play-btn {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: var(--green-dark);
+}
+.video-launcher video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .qc-video-caption {
   text-align: center;
