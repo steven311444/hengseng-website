@@ -40,8 +40,8 @@ Apple 极简黑白风 + 品牌绿 `#0F5C3D`，英雄区预留上海天际线头�
 |---|---|---|
 | 英雄区背景 | `images/shanghai.jpg`（备选 `shanghai-night.jpg`） | ✅ 已放，可替换自己的上海照片 |
 | 产品卡 1 工程防护 | `construction-protection.jpg` | ✅ 已放（免费图，建议后续换产品实拍） |
-| 产品卡 2 遮阳网/篷布 | `shade-net.jpg` | ✅ 已放（免费图） |
-| 产品卡 3 捆绑带 | `cargo-straps.jpg` | ✅ 已放（免费图） |
+| 产品卡 2 遮阳网/篷布 | `pvc-fabric.jpg` | ✅ 已放（自有 PVC 篷房图） |
+| 产品卡 3 捆绑带 | `binding-strap.jpg` | ✅ 已放（自有捆绑带图） |
 | 产品卡 4 仿真花 | `artificial-flowers.jpg` | ✅ 已放（Pexels 免费图） |
 | 信任区 仓库 | `warehouse.jpg` | ✅ 已放（免费图，建议换自己仓库实拍） |
 | 信任区 验货 | `qc-inspection.jpg` | ✅ 已放（Pexels 免费图，建议换自己验货实拍） |
