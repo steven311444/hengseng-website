@@ -1,0 +1,28 @@
+产品图片说明
+============
+
+当前部署包未包含本地JPG图片，网页会自动回退加载供应商远程图片，
+因此上传到服务器后图片可以正常显示。
+
+正式上线前建议：
+1. 从原网站下载全部产品图片；
+2. 检查并去除水印；
+3. 将无水印图片按页面中的文件名放入本 images 文件夹。
+
+文件名清单（与网页对应）：
+tent-1.jpg / tent-2.jpg / tent-4.jpg
+tarp-2.jpg / tarp-3.jpg
+cover-goods-1.jpg / cover-goods-2.jpg
+boat-1.jpg / boat-2.jpg / inflatable-1.jpg
+membrane-1.jpg / membrane-2.jpg / membrane-3.jpg
+truck-1.jpg / truck-2.jpg / truck-3.jpg / truck-4.jpg
+clear-1.jpg / clear-2.jpg / clear-3.jpg
+mesh-1.jpg / mesh-2.jpg / mesh-3.jpg / mesh-4.jpg
+sijia-tent.jpg / sijia-boat.jpg / sijia-membrane.jpg / sijia-inflatable-tent.jpg
+app-outdoor.jpg / app-water.jpg / app-sports.jpg / app-transportation.jpg
+app-rescue.jpg / app-mobile-building.jpg / app-clean-energy.jpg
+app-construction.jpg / app-industrial.jpg / app-agriculture.jpg
+app-aerospace.jpg / app-civil.jpg / app-automotive.jpg
+app-home.jpg / app-catering.jpg / app-special.jpg / app-advertising.jpg
+
+放入后，网页优先使用本地图片，不再依赖远程地址。

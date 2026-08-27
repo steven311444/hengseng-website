@@ -68,6 +68,12 @@ nav .nav-cta {
   border-radius: 980px;
 }
 nav .nav-cta:hover { background: var(--green-dark); color: #fff; }
+nav .nav-tarpaulin {
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+nav .nav-tarpaulin:hover { background: var(--green); color: #fff; }
 nav {
   display: flex;
   align-items: center;
