@@ -81,6 +81,8 @@
   .specs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px}
   .specs i{font-style:normal;background:#F5F5F7;border:1px solid var(--line);color:#424245;font-size:11.5px;padding:5px 10px;border-radius:999px}
   table{width:100%;border-collapse:collapse;font-size:13px}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+  .table-scroll table{min-width:760px}
   th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
   th{background:#F5F5F7;color:#424245;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em}
   td:first-child{background:#F5F5F7;color:#424245;font-weight:600}
@@ -249,7 +251,7 @@
       </div>
       <div class="spec-panel">
         <h4>Technical data</h4>
-        <table>
+        <div class="table-scroll"><table>
           <tr><th>Series</th><th>Weight</th><th>Thickness</th><th>Yarn</th><th>Tensile (warp/weft)</th><th>Tear (warp/weft)</th><th>Fire standard</th></tr>
           <tr><td>HSH-T-450</td><td>450 gsm</td><td>0.35 mm</td><td>840D×840D</td><td>2600 / 2000 N/5cm</td><td>350 / 300 N</td><td rowspan="2">Optional FR</td></tr>
           <tr><td>HSH-T-550</td><td>550 gsm</td><td>0.44 mm</td><td>1000D×1000D</td><td>2700 / 2500 N/5cm</td><td>on request</td></tr>
@@ -258,7 +260,7 @@
           <tr><td>HSH-T-850</td><td>850 gsm</td><td>0.65 mm</td><td>1000D×1000D</td><td>3100 / 2800 N/5cm</td><td>on request</td></tr>
           <tr><td>HSS-P501AA / P801AA</td><td>550–850 gsm</td><td>0.45–0.65 mm</td><td>PES woven</td><td>2500–3000 / 2200–2800 N/5cm</td><td>250–350 / 220–300 N</td><td>DIN 4102-B1</td></tr>
           <tr><td>HSS-B701 / B801 seamless</td><td>750 / 850 gsm</td><td>0.75 / 0.85 mm</td><td>PES woven P2/2</td><td>4200 / 4000 N/5cm</td><td>550 / 450 N</td><td>DIN 4102-B1</td></tr>
-        </table>
+        </table></div>
       </div>
     </article>
 
@@ -279,14 +281,14 @@
       </div>
       <div class="spec-panel">
         <h4>Technical data</h4>
-        <table>
+        <div class="table-scroll"><table>
           <tr><th>Model</th><th>Weight</th><th>Thickness</th><th>Yarn</th><th>Yarn count</th><th>Tensile (warp/weft)</th></tr>
           <tr><td>HSH-C-500</td><td>500 gsm</td><td>0.40 mm</td><td>1000D×1000D</td><td>18×18</td><td>2650 / 2300 N/5cm</td></tr>
           <tr><td>HSH-C-650</td><td>650 gsm</td><td>0.50 mm</td><td>1000D×1000D</td><td>20×20</td><td>2700 / 2500 N/5cm</td></tr>
           <tr><td>HSH-C-680</td><td>680 gsm</td><td>0.54 mm</td><td>1000D×1000D</td><td>20×20</td><td>2700 / 2500 N/5cm</td></tr>
           <tr><td>HSH-C-900</td><td>900 gsm</td><td>0.70 mm</td><td>1000D×1000D</td><td>30×30</td><td>4000 / 3800 N/5cm</td></tr>
           <tr><td>HSS-Z501 shade</td><td>500 gsm</td><td>0.40 mm</td><td>505 dtex</td><td>12×12 /cm</td><td>2200 / 2000 N/5cm</td></tr>
-        </table>
+        </table></div>
       </div>
     </article>
 
@@ -307,14 +309,14 @@
       </div>
       <div class="spec-panel">
         <h4>Technical data</h4>
-        <table>
+        <div class="table-scroll"><table>
           <tr><th>Series</th><th>Weight</th><th>Thickness</th><th>Yarn</th><th>Tensile (warp/weft)</th><th>Weld strength</th><th>Pressure</th></tr>
           <tr><td>HSH-I-650</td><td>650 gsm</td><td>0.50 mm</td><td>1000D×1000D</td><td>3100 / 2900 N/5cm</td><td>on request</td><td>on request</td></tr>
           <tr><td>HSH-I-750</td><td>750 gsm</td><td>0.60 mm</td><td>1000D×1000D</td><td>3100 / 2900 N/5cm</td><td>on request</td><td>on request</td></tr>
           <tr><td>HSH-I-850</td><td>850 gsm</td><td>0.68 mm</td><td>1000D×1000D</td><td>3800 / 3500 N/5cm</td><td>on request</td><td>on request</td></tr>
           <tr><td>HSH-I-1100</td><td>1050 gsm</td><td>0.85 mm</td><td>1000D×1000D</td><td>3800 / 3500 N/5cm</td><td>on request</td><td>on request</td></tr>
           <tr><td>HSS boat range</td><td>610–1800 gsm</td><td>0.52–1.50 mm</td><td>500D–2000D PES</td><td>1800–4200 / 1600–4000 N/5cm</td><td>250 N/5cm</td><td>6–8 psi</td></tr>
-        </table>
+        </table></div>
         <p style="font-size:12px;color:var(--muted);margin-top:8px">Adhesion: ≥120 N/5cm (ISO 2411). Tear strength: 120–450 N. Cold crack: no crack at -30°C. Fire rating: EN 13501 B1 or client requirement.</p>
       </div>
     </article>
@@ -336,7 +338,7 @@
       </div>
       <div class="spec-panel">
         <h4>Technical data</h4>
-        <table>
+        <div class="table-scroll"><table>
           <tr><th>Series</th><th>Weight</th><th>Thickness</th><th>Tensile (warp/weft)</th><th>Tear (warp/weft)</th><th>Surface</th></tr>
           <tr><td>HSH-A-900</td><td>900 gsm</td><td>0.72 mm</td><td>on request</td><td>on request</td><td>PVDF / Acrylic</td></tr>
           <tr><td>HSH-A-1050</td><td>1050 gsm</td><td>0.82 mm</td><td>on request</td><td>on request</td><td>PVDF / Acrylic</td></tr>
@@ -346,7 +348,7 @@
           <tr><td>HSS-M372FA</td><td>720 gsm</td><td>0.58 mm</td><td>3000 / 3000 N/5cm</td><td>300 / 300 N</td><td>PVDF</td></tr>
           <tr><td>HSS-M495FA</td><td>950 gsm</td><td>0.75 mm</td><td>4200 / 4000 N/5cm</td><td>550 / 500 N</td><td>PVDF</td></tr>
           <tr><td>HSS-M10155TF</td><td>1550 gsm</td><td>1.25 mm</td><td>10000 / 9000 N/5cm</td><td>1800 / 1700 N</td><td>TiO2</td></tr>
-        </table>
+        </table></div>
       </div>
     </article>
 
@@ -367,13 +369,13 @@
       </div>
       <div class="spec-panel">
         <h4>Technical data</h4>
-        <table>
+        <div class="table-scroll"><table>
           <tr><th>Model</th><th>Total weight</th><th>Thickness</th><th>Tensile (warp/weft)</th><th>Tear (warp/weft)</th><th>Fire standard</th></tr>
           <tr><td>HSS-T602</td><td>600 gsm</td><td>0.48 mm</td><td>2500 / 2200 N/5cm</td><td>250 / 220 N</td><td>DIN 75200 CL2</td></tr>
           <tr><td>HSS-T652</td><td>650 gsm</td><td>0.51 mm</td><td>2800 / 2500 N/5cm</td><td>280 / 250 N</td><td>DIN 75200 CL2</td></tr>
           <tr><td>HSS-T673</td><td>670 gsm</td><td>0.53 mm</td><td>3000 / 2800 N/5cm</td><td>400 / 350 N</td><td>DIN 75200 CL2</td></tr>
           <tr><td>HSS-T904</td><td>900 gsm</td><td>0.70 mm</td><td>4000 / 3500 N/5cm</td><td>500 / 450 N</td><td>DIN 75200 CL2</td></tr>
-        </table>
+        </table></div>
       </div>
     </article>
 
@@ -394,14 +396,14 @@
       </div>
       <div class="spec-panel">
         <h4>Technical data</h4>
-        <table>
+        <div class="table-scroll"><table>
           <tr><th>Model</th><th>Weight</th><th>Thickness</th><th>Base</th><th>Application</th></tr>
           <tr><td>HSH-T-300</td><td>300 gsm</td><td>0.30 mm</td><td>100% PVC film</td><td>Light-duty windows</td></tr>
           <tr><td>HSH-T-450</td><td>450 gsm</td><td>0.40 mm</td><td>1000D laminated</td><td>Tent windows</td></tr>
           <tr><td>HSH-T-600</td><td>600 gsm</td><td>0.50 mm</td><td>100% PVC film</td><td>Heavy-duty windows</td></tr>
           <tr><td>HSH-T-960</td><td>960 gsm</td><td>0.80 mm</td><td>100% PVC film</td><td>Industrial panels</td></tr>
           <tr><td>HSH-T-1200</td><td>1200 gsm</td><td>1.00 mm</td><td>100% PVC film</td><td>Transparent pergola</td></tr>
-        </table>
+        </table></div>
       </div>
     </article>
 
@@ -422,7 +424,7 @@
       </div>
       <div class="spec-panel">
         <h4>Technical data</h4>
-        <table>
+        <div class="table-scroll"><table>
           <tr><th>Model</th><th>Weight</th><th>Yarn</th><th>Yarn count</th><th>Tensile (warp/weft)</th></tr>
           <tr><td>HSH-M-130</td><td>130 gsm</td><td>250D×250D</td><td>22×19</td><td>1000 / 900 N/5cm</td></tr>
           <tr><td>HSH-M-220</td><td>220 gsm</td><td>500D×500D</td><td>9×9</td><td>750 / 740 N/5cm</td></tr>
@@ -430,7 +432,7 @@
           <tr><td>HSH-M-250 (1000D)</td><td>250 gsm</td><td>1000D×1000D</td><td>9×9</td><td>1300 / 1200 N/5cm</td></tr>
           <tr><td>HSH-M-260 (1000D)</td><td>260 gsm</td><td>1000D×1000D</td><td>12×12</td><td>1400 / 1300 N/5cm</td></tr>
           <tr><td>HSH-M-260 (500×1000D)</td><td>260 gsm</td><td>500D×1000D</td><td>18×12</td><td>1000 / 1400 N/5cm</td></tr>
-        </table>
+        </table></div>
       </div>
     </article>
   </div>
